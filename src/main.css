@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #333333;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 100px 1fr;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #333333;
+    gap: 20px;
+}
+
+.large-area {
+    height: 100%;
+    padding: 16px;
+    color: #aaa;
+    background: #444;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: monospace;
+    transition: background 0.25s, color 0.25s ;
+}
+
+.large-area:hover,
+.large-area:focus {
+    background: #4a4a4a;
+}
+
+.large-area:focus {
+    color: #eee;
+}
+
+.control_buttons{
+    padding: 8px 14px;
+    font: monospace;
+    color: #fff;
+    /* background: linear-gradient(90deg,#12c2e9,#c471ed,#f7797d); */
+    /* background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); */
+    /* background: linear-gradient(to right, #fffbd5, #b20a2c); */
+    /* background: linear-gradient(to right, #00b9db, #0083b0); */
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    font-family: "Roboto",sans-serif;
+    text-shadow: #444;
+}
+
+.control_buttons:active{
+    background : linear-gradient(to right,#00badba8,#0084b0b0);
+}
